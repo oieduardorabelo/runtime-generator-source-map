@@ -1,3 +1,5 @@
+const nodeExternals = require('webpack-node-externals')
+
 module.exports = {
   target: 'node',
   devtool: 'inline-source-map',
@@ -17,9 +19,12 @@ module.exports = {
         }
     ]
   },
-  externals: {
-    'react/addons': true,
-    'react/lib/ExecutionEnvironment': true,
-    'react/lib/ReactContext': true
-  }
+  externals: [
+    nodeExternals(),
+    {
+      'react/addons': true,
+      'react/lib/ExecutionEnvironment': true,
+      'react/lib/ReactContext': true
+    }
+  ]
 };

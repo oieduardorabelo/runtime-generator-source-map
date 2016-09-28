@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha-webpack --opts mocha-webpack.opts"
   },
   "keywords": [],
   "author": "Eduardo Rabelo <oieduardorabelo@gmail.com> (https://github.com/oieduardorabelo)",
@@ -31,6 +31,7 @@
     "babel-preset-react": "6.11.1",
     "enzyme": "2.4.1",
     "expect": "1.20.2",
+    "jsdom-global": "2.1.0",
     "json-loader": "0.5.4",
     "mocha": "3.1.0",
     "mocha-webpack": "0.6.0",
@@ -38,6 +39,7 @@
     "react-addons-test-utils": "15.3.2",
     "react-dom": "15.3.2",
     "source-map-support": "0.4.2",
-    "webpack": "1.13.2"
+    "webpack": "1.13.2",
+    "webpack-node-externals": "1.4.3"
   }
 }
