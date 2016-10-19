@@ -1,6 +1,4 @@
 --colors
 --webpack-config webpack.config.js
---require source-map-support/register
---require babel-polyfill
 --require .mocha-setup.js
 client/**/*.(js|jsx)
